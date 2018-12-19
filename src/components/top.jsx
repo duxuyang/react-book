@@ -1,23 +1,23 @@
 import React, {
 	Component
 } from 'react';
-import '../css/top.css';
+import top from '../css/top.css';
 export default class Top extends Component {
-/*		constructor(props) {
+		constructor(props) {
 	    super(props);
 	    this.state = {};
-	  }*/
+	  }
 
-  tback(){
+  tback=()=>{
 		this.props.history.goBack()
   }
 	render() {
 		return <div>
-		<div className="header">
-			<div className="backbox" onClick={this.tback}>
-				<div className="back"></div>
+		<div className={top.header}>
+			<div className={top.backbox} onClick={this.tback}>
+				<div className={top.back}></div>
 			</div>
-			<div className="tname">{this.props.tname}</div>
+			<div className={top.tname}>{this.props.tname}</div>
 		</div>
 
 		</div>

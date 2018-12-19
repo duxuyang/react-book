@@ -3,7 +3,7 @@
 	height: 44px;
 	display: flex;
 	align-items:center;
-	background: #fc0e50 url(images/header.png) no-repeat;
+	background: #fc0e50 url(./images/header.png) no-repeat;
 	background-size: 100% 100%;
 }
 .header div{
@@ -19,7 +19,7 @@ width:43px;
 .header .back{
 	width:20px;
 	height: 20px;
-	background: #fc0e50 url(images/back.png) no-repeat;
+	background: #fc0e50 url(./images/back.png) no-repeat;
 	background-size: 100% 100%;	
 	margin-left:10px;
 }

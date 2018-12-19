@@ -36,7 +36,7 @@ body{
 	background: #fff;
 	padding:15px 0;
 }
-.nav-1{
+.nav1{
 	width:100%;
 	display: flex;
 	flex-wrap:wrap;
@@ -62,7 +62,7 @@ justify-content:center;
 .search .cen>span:nth-child(2){
 	margin-left:3px;
 }
-.nav-1>div{
+.nav1>div{
 	width: 25%;
 	height: 55px;
 	display: flex;
@@ -71,46 +71,46 @@ justify-content:center;
 	align-items :center;
 	margin-top: 10px;
 }
-.nav-1 .icon{
+.nav1 .icon{
 	width: 36px;
 	height: 40px;
 }
-.nav-1>div:nth-child(1) .icon{
+.nav1>div:nth-child(1) .icon{
 	background: url(./images/download.png) no-repeat;
   background-position: 0 -243px;/* //48.5 */
 	background-size:100%;
 }
-.nav-1>div:nth-child(2) .icon{
+.nav1>div:nth-child(2) .icon{
 	background: url(./images/download.png) no-repeat;
   background-position: 0 -243px;
 	background-size:100%;
 }
-.nav-1>div:nth-child(3) .icon{
+.nav1>div:nth-child(3) .icon{
 	background: url(./images/download.png) no-repeat;
   background-position: 0 -194.5px;
 	background-size:100%;
 }
-.nav-1>div:nth-child(4) .icon{
+.nav1>div:nth-child(4) .icon{
 	background: url(./images/download.png) no-repeat;
   background-position: 0 -388.5px;
 	background-size:100%;
 }
-.nav-1>div:nth-child(5) .icon{
+.nav1>div:nth-child(5) .icon{
 	background: url(./images/download.png) no-repeat;
   background-position: 0 -437px;
 	background-size:100%;
 }
-.nav-1>div:nth-child(6) .icon{
+.nav1>div:nth-child(6) .icon{
 	background: url(./images/download.png) no-repeat;
   background-position: 0 -485.5px;
 	background-size:100%;
 }
-.nav-1>div:nth-child(7) .icon{
+.nav1>div:nth-child(7) .icon{
 	background: url(./images/download.png) no-repeat;
   background-position: 0 -631px;
 	background-size:100%;
 }
-.nav-1>div:nth-child(8) .icon{
+.nav1>div:nth-child(8) .icon{
 	background: url(./images/download.png) no-repeat;
   background-position: 0 -679.5px;
 	background-size:100%;
