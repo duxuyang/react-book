@@ -21,11 +21,15 @@ export default class Search extends Component {
 		}
 		list=(msg)=>{//搜索数据
 		  http('/search',{name:msg}).then((res)=>{
-	  		this.setState({list:res});
+		  	if(res.length){
+					this.setState({list:res});
+		  	}else{
+		  		this.setState({show:false})
+		  	}
 	  	})
 		}
-		detail=()=>{//跳转详情
-			
+		detail=(id)=>{//跳转详情
+			this.props.history.push('/detail/'+id)
 		}
 		search=()=>{
 			if(this.state.val){
@@ -36,6 +40,9 @@ export default class Search extends Component {
 					this.list("盛世娇宠之名门闺香")
 			}
 		}
+		back=()=>{
+			this.props.history.goBack()
+		}
 		componentWillMount(){
 				//热门搜索
 			http('/hotsearch',"").then((res)=>{
@@ -44,7 +51,7 @@ export default class Search extends Component {
     }
 	render() {
 		return <div>
-		<Top tname="搜索中心" ></Top>
+		<Top tname="搜索中心" func={this.back}></Top>
 		<div className={s.smain}>
 			<div className={s.scon}>
 				<span className=""></span>

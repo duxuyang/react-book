@@ -24,7 +24,6 @@ export default class Main extends Component {
   	//热门
 		http('/hotbook',"").then((res)=>{
   		this.setState({hotlist:res});
-
   	})
   }
   componentDidMount(){
@@ -113,7 +112,7 @@ export default class Main extends Component {
 						{
 							this.state.freelist.map((val,index)=>{
 								return <li key={index}>
-									<Link to={{pathname:'/detail',id:val.id }}>
+									<Link to={{pathname:'/detail/'+val.id}}>
 											<img src={val.images} alt="" />
 											<div className={main.tname}>{val.name}</div>
 											<div className={main.tauthor}>{val.author}</div>
@@ -131,7 +130,7 @@ export default class Main extends Component {
 						{
 							this.state.hotlist.map((val,index)=>{
 								return <li key={index}>
-									<Link to={{pathname:'/detail',id:val.id }}>
+									<Link to={{pathname:'/detail/'+val.id}}>
 											<img src={val.images} alt="" />
 											<div className={main.tname}>{val.name}</div>
 											<div className={main.tauthor}>{val.author}</div>

@@ -9,7 +9,7 @@ export default class Top extends Component {
 	  }
 
   tback=()=>{
-		this.props.history.goBack()
+		this.props.func();
   }
 	render() {
 		return <div>
