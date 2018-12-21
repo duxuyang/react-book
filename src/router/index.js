@@ -13,7 +13,7 @@ import Search from '../components/search';
 import Detail from '../components/detail';
 import Reader from '../components/reader';
 import Demo from '../components/demo';
-
+import Demo2 from '../components/demo2';
 const BasicRoute = () => (
   <div>
       <Switch>
@@ -22,7 +22,7 @@ const BasicRoute = () => (
             render={props => (
                <App>
                   <Switch>
-                     <Route path="/" exact component={Main} />
+                     <Route path="/" exact component={Demo2} />
                      <Route path="/search" exact component={Search} />
                      <Route path="/detail/:id" exact component={Detail} />
                      <Route path="/reader/:id" exact component={Reader} />

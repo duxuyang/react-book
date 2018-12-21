@@ -1,3 +1,4 @@
+
 .header{
 	position: fixed;
 	top: 0;
@@ -193,7 +194,7 @@ background-color:#d1edd1;
 .content[bg='4']{
 background-color:#e6e6e6;
 }
-.content[night=true]{
+.content[night='0']{
 	background-color: #0f1410;
 }
 .content .title{
