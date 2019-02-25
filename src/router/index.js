@@ -6,8 +6,6 @@ import {
 } from 'react-router-dom';
 
 
-import App from './../App';
-
 import Main from '../components/main';
 import Search from '../components/search';
 import Detail from '../components/detail';
@@ -20,16 +18,14 @@ const BasicRoute = () => (
          <Route
             path="/"
             render={props => (
-               <App>
                   <Switch>
-                     <Route path="/" exact component={Demo2} />
+                     <Route path="/" exact component={Main} />
                      <Route path="/search" exact component={Search} />
                      <Route path="/detail/:id" exact component={Detail} />
                      <Route path="/reader/:id" exact component={Reader} />
                       {/*路由不正确时，默认跳回home页面*/}
                      <Route render={() => <Redirect to="/" />} />
                   </Switch>
-               </App>
             )}
          />
       </Switch>
